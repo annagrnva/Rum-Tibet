@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>RumTibet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="dist/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="header-nav">
+        <div class="header-nav__logo">
+          <img src="img/img/header-logo.png" alt="logo">
+
+        </div>
+        <div class="header-nav__menu">
+          <a class="header-nav__menu-link" href="#">Главная</a>
+          <a class="header-nav__menu-link" href="#">Про гида</a>
+          <a class="header-nav__menu-link" href="#"> Программа тура</a>
+          <a class="header-nav__menu-link" href="#">Стоимость</a>
+          <a class="header-nav__menu-link" href="#">Блог</a>
+          <a class="header-nav__menu-link" href="#">Контакты</a>
+
+        </div>
+        <button class="btn">Консультация
+
+        </button>
+      </nav>
+
+      <div class="header-content">
+        <h1>Насладись прогулкой в горах
+          с командой единомышленников
+        </h1>
+
+      </div>
+
+      <div class="header-form">
+        <div class="header-form__wrapper">
+          <div class="header-form__group">
+            <select name="select-category" class="header-form__group-select header-form__group-select-text">
+              <option disabled selected class="header-form__group-select-text">Локация для тура</option>
+              <option class="header-form__select-text" value="1">Рим</option>
+              <option class="header-form__select-text" value="2">Амстердам</option>
+              <option class="header-form__select-text" value="3">Париж</option>
+            </select>
+            <div class="header-form__group-text">выберите из списка
+            </div>
+          </div>
+
+
+          <input type="date" class="header-form__group-select header-form__group-select-text" name="trip-start" id="dateToday">
+   <div class="header-form__group-text">укажите диапазон
+            </div>
+      </div>
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <script src="/dist/script.js"></script>
+</body>
+
+</html>
