@@ -15,7 +15,7 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-.btn {
+.btn-green {
 height: 44px;
 padding: 0 24px;
 border-radius: 4px;
@@ -25,4 +25,18 @@ font-size: 16px;
 font-weight: 600;
 color: rgba(253, 253, 253, 1);
 cursor: pointer;
+}
+
+.btn-white {
+    height: 52px;
+    padding: 0 36px;
+    border-radius: 4px;
+    background: rgba(253, 253, 253, 1);
+
+font-size: 16px;
+font-weight: 700;
+color: rgba(26, 62, 62, 1);
+cursor: pointer;
+
+
 }

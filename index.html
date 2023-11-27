@@ -38,7 +38,7 @@
           <a class="header-nav__menu-link" href="#">Контакты</a>
 
         </div>
-        <button class="btn">Консультация
+        <button class="btn-green">Консультация
 
         </button>
       </nav>
@@ -55,19 +55,36 @@
           <div class="header-form__group">
             <select name="select-category" class="header-form__group-select header-form__group-select-text">
               <option disabled selected class="header-form__group-select-text">Локация для тура</option>
-              <option class="header-form__select-text" value="1">Рим</option>
-              <option class="header-form__select-text" value="2">Амстердам</option>
-              <option class="header-form__select-text" value="3">Париж</option>
+              <option class="header-form__select-text header-form__select-text--option" value="1">Рим</option>
+              <option class="header-form__select-text header-form__select-text--option" value="2">Амстердам</option>
+              <option class="header-form__select-text header-form__select-text--option" value="3">Париж</option>
             </select>
             <div class="header-form__group-text">выберите из списка
             </div>
           </div>
 
 
-          <input type="date" class="header-form__group-select header-form__group-select-text" name="trip-start" id="dateToday">
-   <div class="header-form__group-text">укажите диапазон
+          <div class="header-form__group">
+            <form class="header-form__group-select ">
+              <div  class="no_text_into_input">
+                <input  class="header-form__group-select-text" type="date" placeholder="Дата похода"
+                  name="trip-start" id="dateToday">
+              </div>
+            </form>
+            <div class="header-form__group-text">укажите диапазон
             </div>
-      </div>
+          </div>
+
+          <div class="header-form__group">
+            <input type="number" placeholder="Участники"
+              class="header-form__group-select header-form__group-select-text" id="tentacles" name="tentacles" min="4"
+              max="100" />
+            <div class="header-form__group-text">минимум 4 человека
+            </div>
+          </div>
+
+          <button class="btn-white">Найти программу</button>
+        </div>
       </div>
 
     </div>
