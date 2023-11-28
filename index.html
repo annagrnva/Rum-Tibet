@@ -38,17 +38,45 @@
           <a class="header-nav__menu-link" href="#">Контакты</a>
 
         </div>
-        <button class="btn-green">Консультация
+        <button class="btn-green header-nav__btn-green">Консультация
 
         </button>
+
+
+        <input class="checkbox" type="checkbox" name="inputTest" id="inputTest" />
+        <label for="inputTest" class="header-nav__btn">
+          <div>
+            <span class="header-nav__btn-line"></span>
+            <span class="header-nav__btn-line "></span>
+            <span class="header-nav__btn-line header-nav__btn-line-short"></span>
+
+          </div>
+        </label>
+
+        <div class="header-nav__menu-mobile">
+          <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" fill="none">
+            <path fill="#FDFDFD"
+              d="M5.715 4.61 1.265.16A.543.543 0 0 0 .878 0a.543.543 0 0 0-.386.16L.164.487a.548.548 0 0 0 0 .774L3.9 4.998.16 8.739a.543.543 0 0 0-.16.387c0 .146.057.284.16.387l.327.327c.103.103.24.16.387.16a.543.543 0 0 0 .387-.16l4.454-4.454a.544.544 0 0 0 .16-.388.544.544 0 0 0-.16-.388Z" />
+          </svg>
+          <a class="header-nav__menu-mobile--link" href="#">Главная</a>
+          <a class="header-nav__menu-mobile--link" href="#">Про гида</a>
+          <a class="header-nav__menu-mobile--link" href="#"> Программа тура</a>
+          <a class="header-nav__menu-mobile--link" href="#">Стоимость</a>
+          <a class="header-nav__menu-mobile--link" href="#">Блог</a>
+          <a class="header-nav__menu-mobile--link" href="#">Контакты</a>
+
+        </div>
       </nav>
 
       <div class="header-content">
-        <h1>Насладись прогулкой в горах
+        <h1>Насладись прогулкой в горы
           с командой единомышленников
         </h1>
 
       </div>
+
+      <button class="btn-white btn-white__mobile">Найти программу</button>
+
 
       <div class="header-form">
         <div class="header-form__wrapper">
@@ -66,9 +94,9 @@
 
           <div class="header-form__group">
             <form class="header-form__group-select ">
-              <div  class="no_text_into_input">
-                <input  class="header-form__group-select-text" type="date" placeholder="Дата похода"
-                  name="trip-start" id="dateToday">
+              <div class="no_text_into_input">
+                <input class="header-form__group-select-text" type="date" placeholder="Дата похода" name="trip-start"
+                  id="dateToday">
               </div>
             </form>
             <div class="header-form__group-text">укажите диапазон
@@ -90,6 +118,7 @@
     </div>
 
   </header>
+
 
 
   <script src="/dist/script.js"></script>

@@ -6,6 +6,7 @@
 body {
     font-family: $font-text;
 }
+
 img {
     width: 100%;
 }
@@ -15,16 +16,17 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 }
-.btn-green {
-height: 44px;
-padding: 0 24px;
-border-radius: 4px;
-background: rgba(26, 62, 62, 1);
 
-font-size: 16px;
-font-weight: 600;
-color: rgba(253, 253, 253, 1);
-cursor: pointer;
+.btn-green {
+    height: 44px;
+    padding: 0 24px;
+    border-radius: 4px;
+    background: rgba(26, 62, 62, 1);
+
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(253, 253, 253, 1);
+    cursor: pointer;
 }
 
 .btn-white {
@@ -33,10 +35,27 @@ cursor: pointer;
     border-radius: 4px;
     background: rgba(253, 253, 253, 1);
 
-font-size: 16px;
-font-weight: 700;
-color: rgba(26, 62, 62, 1);
-cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(26, 62, 62, 1);
+    cursor: pointer;
 
 
+}
+
+.btn-white__mobile {
+    display: none;
+
+    @include mediaTablet {
+        display: block;
+        height: 52px;
+        padding: 0 36px;
+        border-radius: 4px;
+        background: rgba(253, 253, 253, 1);
+
+        font-size: 16px;
+        font-weight: 700;
+        color: rgba(26, 62, 62, 1);
+        cursor: pointer;
+    }
 }
