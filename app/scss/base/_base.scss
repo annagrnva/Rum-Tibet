@@ -27,6 +27,12 @@ img {
     font-weight: 600;
     color: rgba(253, 253, 253, 1);
     cursor: pointer;
+
+    @include mediaTablet {
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
 }
 
 .btn-white {
@@ -63,4 +69,80 @@ img {
 .block-padding {
     padding-top: 80px;
     padding-bottom: 100px;
+
+    @include mediaTablet {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.block-info {
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 400;
+        margin-bottom: 8px;
+        color: rgba(242, 190, 34, 1);
+
+        @include mediaTablet {
+            font-size: 16px;
+        }
+
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 800;
+        margin-bottom: 40px;
+        color: rgba(24, 18, 30, 1);
+
+        @include mediaTablet {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+    }
+
+    &__paragraph {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        color: rgba(24, 18, 30, 1);
+
+        @include mediaTablet {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+    }
+}
+
+.block-header {
+    text-align: center;
+
+    &__subtitle {
+        font-size: 24px;
+        font-weight: 400;
+        color: rgba(242, 190, 34, 1);
+        margin-bottom: 8px;
+
+        @include mediaTablet {
+            font-size: 16px;
+        }
+
+    }
+
+    &__title {
+        font-size: 32px;
+        font-weight: 800;
+        color: rgba(24, 18, 30, 1);
+
+        @include mediaTablet {
+            font-size: 24px;
+        }
+    }
+
+    &__btn-green {
+        display: flex;
+        align-items: center;
+        margin: auto;
+    }
 }
