@@ -117,6 +117,9 @@ img {
 
 .block-header {
     text-align: center;
+    @include mediaTablet {
+        text-align: left;
+    }
 
     &__subtitle {
         font-size: 24px;
