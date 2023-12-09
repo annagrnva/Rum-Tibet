@@ -1,11 +1,18 @@
 .impression {
     &-wrapper {
         padding: 40px 0;
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3px;
+        @include mediaTablet {
+        }
     }
 
     &-photo {
         border-radius: 6px;
         transition: 0.5s all ease-in-out;
+        width: 50%;
 
         &:hover {
 
@@ -15,12 +22,23 @@
         &__big {
             width: 580px;
             height: 250px;
+            width: 48%;
+
+            @include mediaTablet {
+                width: 280px;
+                height: 250px;
+            }
 
         }
 
         &__small {
             width: 280px;
             height: 250px;
+            width: 24%;
         }
     }
+}
+
+.block-padding__impression {
+    padding-bottom: 0px;
 }

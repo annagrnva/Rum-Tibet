@@ -1,72 +1,61 @@
 .offers {
     display: flex;
     align-items: center;
+
+    &-color {
+        background: rgba(243, 245, 244, 1);
+    }
 }
 
-.offers-color {
-    background: rgba(243, 245, 244, 1);
 
-    .offers-left {
-        &__wrapper {
-            display: flex;
-            align-items: center;
-            padding-bottom: 40px;
-
-            @include mediaTablet {
-                padding-bottom: 30px;
-            }
-        }
-
-        &__item {
-            &-left {
-                &--img {
-                    width: 50px;
-                    height: 50px;
-                    margin-right: 8px;
-                }
-            }
-
-            &-right {
-                &--title {
-                    font-size: 18px;
-                    font-weight: 700;
-                    color: rgba(24, 18, 30, 1);
-                    margin-bottom: 4px;
-                }
-
-                &--subtitle {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: rgba(0, 0, 0, 1);
-                }
-            }
-        }
-    }
-
-    .offers-right {
+.offers-left {
+    &__wrapper {
         display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
+        align-items: center;
+        padding-bottom: 40px;
 
         @include mediaTablet {
-            display: none;
-         
+            padding-bottom: 30px;
+        }
+    }
+
+    &__item {
+        &-left {
+            &--img {
+                width: 50px;
+                height: 50px;
+                margin-right: 8px;
+            }
         }
 
-        &__img {
-            width: 225px;
-            height: 225px;
+        &-right {
+            &--title {
+                font-size: 18px;
+                font-weight: 700;
+                color: rgba(24, 18, 30, 1);
+                margin-bottom: 4px;
+            }
 
-            @include mediaTablet {
-                
+            &--subtitle {
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 1);
             }
         }
     }
 }
 
-.img {
+.offers-right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+
     @include mediaTablet {
-      width: 50%;          
+        display: none;
     }
-    
+
+    &__img {
+        width: 48%;
+    }
 }
