@@ -6,9 +6,18 @@
     &-wrapper {
         display: flex;
         justify-content: space-between;
+
+        @include mediaTablet {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &-info {
+        @include mediaTablet {
+            padding-bottom: 50px;
+        }
+
         max-width: 480px;
 
         &__title {
@@ -21,7 +30,12 @@
         &__paragraph {
             font-size: 14px;
             font-weight: 400;
+            line-height: 20px;
             padding-bottom: 80px;
+
+            @include mediaTablet {
+                padding-bottom: 30px;
+            }
 
         }
 
@@ -48,6 +62,14 @@
 
     &-menu {
         max-width: 280px;
+
+        @include mediaTablet {
+            padding-bottom: 50px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
 
         &__title {
             font-size: 20px;
@@ -123,6 +145,13 @@
         font-size: 14px;
         font-weight: 600;
         color: rgba(255, 255, 255, 1);
+
+        @include mediaTablet {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 8px;
+        }
     }
 
     &__data {

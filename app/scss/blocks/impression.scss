@@ -15,7 +15,6 @@
         width: 50%;
 
         &:hover {
-
             transform: scale(1.2);
         }
 
@@ -24,17 +23,11 @@
             height: 250px;
             width: 48%;
 
-            @include mediaTablet {
-                width: 280px;
-                height: 250px;
-            }
-
         }
 
         &__small {
             width: 280px;
             height: 250px;
-            width: 24%;
         }
     }
 }
