@@ -1,4 +1,4 @@
-.approach {
+.hikeVideo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,15 @@
         position: relative;
 
         @include mediaTablet {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+
+        &__video-wrapper {
+            position: relative;
+
         }
 
         &__img {
@@ -23,10 +31,10 @@
             border-radius: 24px;
         }
 
-        &__play {
+        &__video-play {
             position: absolute;
-            left: 224px;
-            top: 378px;
+            left: 50%;
+            top: 50%;
 
             &:hover {
                 path {
@@ -41,10 +49,14 @@
 
 
 
-.approach-left__img-bg {}
+.approach-left__video-img--bg {}
 
-.approach-left__img-fg {
+.hikeVideo-left__video-img--fg {
+    position: relative;
+}
+
+.hikeVideo-left__video-wrapper--fg {
+    left: 97px;
     position: absolute;
-    top: 200px;
-    left: 80px;
+    top: 75px;
 }

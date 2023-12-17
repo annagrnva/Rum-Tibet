@@ -22,10 +22,7 @@
     &:hover {
         transform: scale(.9);
     }
-
 }
-
-.direction-card__img {}
 
 .direction-card__front {
     height: 100%;
@@ -41,8 +38,6 @@
         top: 67px;
         right: 0;
         background: rgba(253, 253, 253, 0.4);
-
-        &--svg {}
 
         &--number {
             font-size: 14px;
@@ -86,7 +81,6 @@
             }
         }
 
-
         &--right {
             font-size: 20px;
             font-weight: 700;
@@ -117,8 +111,6 @@
 
     &-top {
         margin-bottom: 38px;
-
-
 
         &-wrapper {
             display: flex;
