@@ -14,11 +14,23 @@
 
 .hikeVideo-left {
     position: relative;
+    width: 460px;
+    height: 500px;
+
+    @include mediaTablet {
+        position: unset;
+        width: auto;
+        height: auto;
+    }
 
     &__wrapper {
         position: absolute;
         top: 90px;
         left: 100px;
+
+        @include mediaTablet {
+            position: relative;
+        }
     }
 
 }
@@ -30,7 +42,9 @@
     position: relative;
 }
 
-.hikeVideo-left__img-bg {}
+.hikeVideo-left__img-bg {
+    position: relative;
+}
 
 .hikeVideo-left__img-fg {
     /*

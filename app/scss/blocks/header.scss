@@ -205,6 +205,23 @@ input::placeholder {
         display: block;
     }
 
+    &--wrapper {
+        display: flex;
+        gap: 8px;
+        padding-bottom: 16px;
+
+        &:last-child {
+            padding-bottom: 0px;
+        }
+
+        &:hover {
+
+            path {
+                fill: rgba(242, 190, 34, 1);
+            }
+        }
+    }
+
     &--link {
         display: block;
         font-size: 14px;
@@ -218,6 +235,7 @@ input::placeholder {
             color: rgba(242, 190, 34, 1);
 
         }
+
 
 
     }
