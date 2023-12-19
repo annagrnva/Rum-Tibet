@@ -32,6 +32,15 @@ img {
         align-items: center;
         margin: auto;
     }
+
+    @include mediaMobile {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        height: 38px;
+        padding: 0 18px;
+        font-size: 14px;
+    }
 }
 
 .btn-white {
@@ -59,6 +68,18 @@ img {
         color: rgba(26, 62, 62, 1);
         cursor: pointer;
     }
+
+    @include mediaMobile {
+        display: block;
+        height: 47px;
+        padding: 0 24px;
+        border-radius: 4px;
+        background: rgba(253, 253, 253, 1);
+        font-size: 14px;
+        font-weight: 700;
+        color: rgba(26, 62, 62, 1);
+        cursor: pointer;
+    }
 }
 
 .block-padding {
@@ -68,6 +89,11 @@ img {
     @include mediaTablet {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    @include mediaMobile {
+        padding-top: 45px;
+        padding-bottom: 45px;
     }
 }
 
@@ -81,6 +107,10 @@ img {
         @include mediaTablet {
             font-size: 16px;
         }
+
+        @include mediaMobile {
+            font-size: 16px;
+        }
     }
 
     &__title {
@@ -92,6 +122,11 @@ img {
         @include mediaTablet {
             font-size: 24px;
             margin-bottom: 24px;
+        }
+
+        @include mediaMobile {
+            font-size: 22px;
+            margin-bottom: 22px;
         }
     }
 
@@ -105,11 +140,17 @@ img {
             font-size: 16px;
             margin-bottom: 24px;
         }
+
+        @include mediaMobile {
+            font-size: 14px;
+            margin-bottom: 22px;
+        }
     }
 }
 
 .block-header {
     text-align: center;
+
     @include mediaTablet {
         text-align: left;
     }
@@ -123,6 +164,10 @@ img {
         @include mediaTablet {
             font-size: 16px;
         }
+
+        @include mediaMobile {
+            font-size: 16px;
+        }
     }
 
     &__title {
@@ -132,6 +177,10 @@ img {
 
         @include mediaTablet {
             font-size: 24px;
+        }
+
+        @include mediaMobile {
+            font-size: 22px;
         }
     }
 

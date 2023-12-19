@@ -2,11 +2,10 @@
     &-wrapper {
         padding: 40px 0;
         display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 3px;
-        @include mediaTablet {
-        }
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3px;
+
     }
 
     &-photo {
@@ -22,6 +21,10 @@
             width: 580px;
             height: 250px;
             width: 48%;
+
+            @include mediaMobile {
+                width: 77%;
+            }
 
         }
 

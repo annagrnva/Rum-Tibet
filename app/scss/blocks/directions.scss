@@ -10,6 +10,15 @@
         justify-content: center;
         gap: 8px;
     }
+
+    @include mediaMobile {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding-top: 40px;
+    padding-bottom: 40px;
+    }
 }
 
 .direction-card {
@@ -21,6 +30,11 @@
 
     &:hover {
         transform: scale(.9);
+    }
+
+    @include mediaMobile {
+        max-width: 350px;
+        max-height: 460px;
     }
 }
 
@@ -39,10 +53,20 @@
         right: 0;
         background: rgba(253, 253, 253, 0.4);
 
+        @include mediaMobile {
+            width: 55px;
+            height: 26px;
+            top: 42px;
+        }
+
         &--number {
             font-size: 14px;
             font-weight: 700;
             color: rgba(26, 62, 62, 1);
+
+            @include mediaMobile {
+                font-size: 12px;
+            }
         }
     }
 
@@ -68,6 +92,10 @@
                 @include mediaTablet {
                     font-size: 18px;
                 }
+
+                @include mediaMobile {
+                    font-size: 16px;
+                }
             }
 
             &--subtitle {
@@ -76,6 +104,10 @@
                 color: rgba(253, 253, 253, 1);
 
                 @include mediaTablet {
+                    display: none;
+                }
+
+                @include mediaMobile {
                     display: none;
                 }
             }
@@ -88,6 +120,11 @@
             padding: 16px 8px;
             border-radius: 4px;
             background: rgba(255, 255, 255, 0.3);
+        
+            @include mediaMobile {
+                font-size: 16px;
+                padding: 8px 4px;
+            }
         }
     }
 }
@@ -123,6 +160,10 @@
                 font-size: 24px;
                 font-weight: 700;
                 color: rgba(253, 253, 253, 1);
+               
+                @include mediaMobile {
+                    font-size: 18px;
+                }
             }
 
             &--subtitle {
@@ -139,6 +180,11 @@
             padding: 16px 8px;
             border-radius: 4px;
             background: rgba(255, 255, 255, 0.3);
+            
+            @include mediaMobile {
+                font-size: 16px;
+                padding: 8px 4px;
+            }
         }
     }
 
@@ -147,6 +193,11 @@
         font-size: 16px;
         font-weight: 400;
         color: rgba(253, 253, 253, 1);
+
+        @include mediaMobile {
+            margin-bottom: 80px;
+            font-size: 14px;  
+        }
     }
 }
 

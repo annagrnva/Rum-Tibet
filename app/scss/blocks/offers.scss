@@ -17,6 +17,10 @@
         @include mediaTablet {
             padding-bottom: 30px;
         }
+
+        @include mediaMobile {
+            padding-bottom: 30px;
+        }
     }
 
     &__item {
@@ -52,6 +56,10 @@
     gap: 8px;
 
     @include mediaTablet {
+        display: none;
+    }
+
+    @include mediaMobile {
         display: none;
     }
 
