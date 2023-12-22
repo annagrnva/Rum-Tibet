@@ -18,9 +18,8 @@
         }
 
         &__big {
-            width: 580px;
+            max-width: 580px;
             height: 250px;
-            width: 48%;
 
             @include mediaMobile {
                 width: 77%;

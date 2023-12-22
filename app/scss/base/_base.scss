@@ -26,6 +26,7 @@ img {
     font-weight: 600;
     color: rgba(253, 253, 253, 1);
     cursor: pointer;
+    border: none;
 
     @include mediaTablet {
         display: flex;
@@ -52,6 +53,7 @@ img {
     font-weight: 700;
     color: rgba(26, 62, 62, 1);
     cursor: pointer;
+    border: none;
 }
 
 .btn-white__mobile {

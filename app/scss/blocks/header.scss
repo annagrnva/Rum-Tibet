@@ -3,6 +3,14 @@
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-bottom: 80px;
+    height: 800px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .header-nav {
@@ -63,8 +71,7 @@
     font-family: $font-header;
     font-size: 60px;
     text-transform: uppercase;
-    padding-top: 463px;
-    padding-bottom: 41px;
+    margin-bottom: 41px;
     color: rgba(253, 253, 253, 1);
 
     @include mediaTablet {
