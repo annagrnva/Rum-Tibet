@@ -10,6 +10,11 @@
         gap: 40px;
     }
 
+    @include mediaMobile {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
 }
 
 .hikeVideo-left {
@@ -18,9 +23,17 @@
     height: 500px;
 
     @include mediaTablet {
-        position: unset;
+        position: static;
         width: auto;
         height: auto;
+
+    }
+
+    @include mediaMobile {
+        position: static;
+        width: auto;
+        height: auto;
+
     }
 
     &__wrapper {
@@ -29,7 +42,11 @@
         left: 100px;
 
         @include mediaTablet {
-            position: relative;
+            position: static;
+        }
+
+        @include mediaMobile {
+            position: static;
         }
     }
 
@@ -46,14 +63,21 @@
     position: relative;
 }
 
-.hikeVideo-left__img-fg {
-}
+.hikeVideo-left__img-fg {}
 
 .hikeVideo-left__svg {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include mediaTablet {
+        position: static;
+    }
+
+    @include mediaMobile {
+        position: static;
+    }
 }
 
 path:hover {

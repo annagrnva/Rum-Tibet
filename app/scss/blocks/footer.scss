@@ -103,6 +103,7 @@
         &__item {
             display: flex;
             gap: 8px;
+            align-items: center;
             padding-bottom: 16px;
 
             &:last-child {
@@ -137,7 +138,7 @@
 .footer-menu__item-wrap {
     display: flex;
     gap: 8px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer-menu__item__lable {
@@ -186,6 +187,4 @@
         text-decoration: underline;
         color: rgba(255, 255, 255, 1);
     }
-
-
 }
