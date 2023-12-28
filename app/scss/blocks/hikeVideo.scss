@@ -23,16 +23,21 @@
     height: 500px;
 
     @include mediaTablet {
-        position: static;
-        width: auto;
-        height: auto;
 
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
     }
 
     @include mediaMobile {
-        position: static;
-        width: auto;
+
         height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
 
     }
 
@@ -61,6 +66,14 @@
 
 .hikeVideo-left__img-bg {
     position: relative;
+
+    @include mediaTablet {
+        position: static;
+    }
+
+    @include mediaMobile {
+        position: static;
+    }
 }
 
 .hikeVideo-left__img-fg {}
@@ -72,13 +85,22 @@
     transform: translate(-50%, -50%);
 
     @include mediaTablet {
-        position: static;
+        position: absolute;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     @include mediaMobile {
-        position: static;
+        position: absolute;
+        top: 73%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+
 }
+
+
 
 path:hover {
     fill: #ffff00;
