@@ -1,0 +1,170 @@
+.header {}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+
+  &-logo {
+    position: relative;
+    margin-right: 10px;
+
+    &_front {
+      position: relative;
+
+      &-foreground {
+        position: absolute;
+        z-index: 2;
+        left: 7px;
+      }
+
+      &-background {
+        position: absolute;
+        z-index: 1;
+      }
+    }
+
+    &_back {
+      position: absolute;
+      left: 5px;
+      top: 5px;
+    }
+
+    &_wrapper {
+      display: flex;
+      gap: 56px;
+    }
+
+    &_name {
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 22px;
+      color: #6C5FBC;
+    }
+  }
+}
+
+
+.nav-links_wrapper {
+  display: flex;
+  gap: 55px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #606060;
+}
+
+.nav-logForm_wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-logForm_login {
+  color: #606060;
+
+}
+
+.nav-underline {
+  border: 1px solid #CBCBCB
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 110px;
+  position: absolute;
+  align-items: center;
+  padding: 199px 0;
+
+  &_upperText-wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    &_line {
+      width: 54px;
+      border: 1px solid #201F1F33;
+    }
+
+    &_text {
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 15px;
+      color: #201F1F33;
+
+    }
+  }
+}
+
+.header-content_wrapper-left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+
+  &-main {
+    &_title {
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 75px;
+      color: #201F1F;
+
+      &-spanWord {
+        color: #5C4EAE;
+      }
+    }
+
+    &_description {
+      font-weight: 500;
+      font-size: 18px;
+      color: #676767;
+    }
+  }
+}
+
+.header-content_wrapper-left-main_button {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.header-content_button {
+  border-radius: 13px;
+  border: 1.5px solid #6C5FBC;
+  color: #6C5FBC;
+  background-color: transparent;
+}
+
+.header-content_wrapper-left-rating {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+  &_number {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #334155;
+  }
+}
+
+.header-content_wrapper-star-rating {
+  display: flex;
+  gap: 4px;
+}
+
+.header-content_wrapper-right-background {
+  position: relative;
+}
+
+.header-content_wrapper-right-front {
+  position: absolute;
+  top: 9px;
+  right: 16px;
+}
+
+.header-content_wrapper-right-back {}

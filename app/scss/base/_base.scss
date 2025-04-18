@@ -1,18 +1,33 @@
-// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap");
 
 
 
 body {
     font-family: $font-text;
+    background: #F9F9F9;
+
 }
 
 img {
-    width: 100%;
+    // width: 100%;
 }
 
 .container {
-    max-width: 1180px;
+    max-width: 1248px;
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.button {
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 18px;
+    border: none;
+    padding: 18px 27px;
+}
+
+.button-purple {
+    background: #6C5FBC;
+    color: #F9F9F9;
+  }
